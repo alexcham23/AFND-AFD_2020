@@ -4,6 +4,7 @@ import AFD
 import gramatica
 import Archivo
 import reporte
+
 def retorno():
     os.system("cls")
     prueba()
@@ -46,7 +47,7 @@ def prueba():
             menudiv()
             break
         elif op == '7' :
-            os.system("cls")
+            
             sys.exit()
             
             break
@@ -54,9 +55,9 @@ def prueba():
 
 def menudiv():
     op = 0
-    while op !=7:
+    while op !=6:
         print("*************************************************")
-        print("*\t 1. INGRESAR/MODIFICAR GRAMATICA \t\t\t\t*")
+        print("*\t 1. INGRESAR/MODIFICAR GRAMATICA \t*")
         print("*\t 2. GENERAR AUTOMATA DE PILA \t\t*")
         print("*\t 3. VIZUALIZAR AUTOMATA \t\t*")
         print("*\t 4. VALIDAR CADENA \t\t\t*")
@@ -90,7 +91,6 @@ def menudiv():
             retorno()
             break
         elif op == '6':
-            os.system("cls")
             sys.exit()
             break
         else:

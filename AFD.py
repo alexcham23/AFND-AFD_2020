@@ -2,7 +2,6 @@ import os
 import graph
 import menu
 import msvcrt
-#import ptvsd; print(ptvsd.__version__)
 nombre=""
 estado=[]
 alfabeto=[]
