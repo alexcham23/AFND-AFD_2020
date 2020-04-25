@@ -14,7 +14,7 @@ def press_enter():
         m= str(msvcrt.getch(),'utf -8')
         if m == "\r":
             os.system("cls")
-            menu.prueba()
+            menu.retorno()
             break
            
 
