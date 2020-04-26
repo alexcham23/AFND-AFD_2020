@@ -4,6 +4,7 @@ import AFD
 import gramatica
 import Archivo
 import reporte
+import tipo2gram as tip
 
 def retorno():
     os.system("cls")
@@ -52,7 +53,6 @@ def prueba():
             
             break
 
-
 def menudiv():
     op = 0
     while op !=6:
@@ -68,7 +68,7 @@ def menudiv():
 
         if op == '1':
             os.system("cls")
-            prueba()
+            menugrab2()
             break
         elif op == '2':
             os.system("cls")
@@ -96,4 +96,47 @@ def menudiv():
         else:
             os.system("cls")
             menudiv()
+def menugrab2():
+    op = 0
+    while op !=6:
+        print("*************************************************")
+        print("*\t 1. Ingresar terminales \t*")
+        print("*\t 2. Ingresar no Terminales \t\t*")
+        print("*\t 3. Ingresar Producciones\t\t*")
+        print("*\t 4. Borrar Producciones \t\t\t*")
+        print("*\t 5. No terminal Inicial\t\t*")
+        print("*\t 6. Regresar al Menu Principal \t\t\t\t*")
+        print("*************************************************")
+        op = str(input("Elige una opcion:\n"))
+
+        if op == '1':
+            os.system("cls")
+            tip.terminal()
+            break
+        elif op == '2':
+            os.system("cls")
+            #gramatica.pedirnombre()
+            print("Bienvenido Amigo")
+            break
+        elif op == '3':
+            os.system("cls")
+            #gramatica.pedirnombre()
+            print("Bienvenido Amigo")
+            break
+        elif op == '4':
+            os.system("cls")
+            #gramatica.pedirnombre()
+            print("Bienvenido Amigo")
+            break
+        elif op == '5':
+            os.system("cls")
+            #gramatica.pedirnombre()
+            retorno()
+            break
+        elif op == '6':
+            sys.exit()
+            break
+        else:
+            os.system("cls")
+            menudiv()               
 menudiv()
