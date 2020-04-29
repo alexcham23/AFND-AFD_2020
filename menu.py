@@ -5,7 +5,7 @@ import gramatica
 import Archivo
 import reporte
 import tipo2gram as tip
-
+banderamenu=0
 def retorno():
     os.system("cls")
     prueba()
@@ -45,7 +45,7 @@ def prueba():
             break
         elif op == '6' :
             os.system("cls")
-            menudiv()
+            tip.pedirnombre()
             break
         elif op == '7' :
             
@@ -97,6 +97,7 @@ def menudiv():
             os.system("cls")
             menudiv()
 def menugrab2():
+    global banderamenu
     op = 0
     while op !=6:
         print("*************************************************")
@@ -110,25 +111,30 @@ def menugrab2():
         op = str(input("Elige una opcion:\n"))
 
         if op == '1':
+            banderamenu=1
             os.system("cls")
             tip.terminal()
             break
         elif op == '2':
+            banderamenu=2
             os.system("cls")
             #gramatica.pedirnombre()
             print("Bienvenido Amigo")
             break
         elif op == '3':
+            banderamenu=3
             os.system("cls")
             #gramatica.pedirnombre()
             print("Bienvenido Amigo")
             break
         elif op == '4':
+            banderamenu=4
             os.system("cls")
             #gramatica.pedirnombre()
             print("Bienvenido Amigo")
             break
         elif op == '5':
+            banderamenu=5
             os.system("cls")
             #gramatica.pedirnombre()
             retorno()
@@ -139,4 +145,4 @@ def menugrab2():
         else:
             os.system("cls")
             menudiv()               
-menudiv()
+retorno()
